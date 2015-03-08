@@ -1,6 +1,6 @@
 ## Instructions
-Make Sure that the data is in the working directory before running any of the scripts
-All the plots are in the folder figure
+Make Sure that the data is in the working directory before running any of the scripts, 
+All the plots are in the folder figure, 
 all the R codes are in the main repository plot1.R , plot2.R, plot3.R, plot4.R
 
 
