@@ -9,11 +9,11 @@ data<-read.csv.sql("household_power_consumption.txt",header=TRUE,sep=";",sql="Se
 #1/2/2007
 data$Date<-strptime(x = data$Date,format = "%d/%m/%Y" )
 
-##plot1
-##Initiating png graphic device
-png(filename = "plot1.png",width = 480,height = 480)
-#plotting the histogram
-hist(x = data$Global_active_power,col = "red",xlab = "Global Active Power (kilowatts)",main = "Global Active Power",breaks=12)
-?hist
-#turning off the device
+##plot2
+
+##creating date time for the plot
+#paste(as.character(data$Date),data$Time)
+#strptime(paste(as.character(data$Date),data$Time),format="%Y-%m-%d %H:%M:%S")
+png(filename = "plot2.png",width = 480,height = 480)
+plot(strptime(paste(as.character(data$Date),data$Time),format="%Y-%m-%d %H:%M:%S"),data$Global_active_power,type="l",ylab="Global Active Power (kilowatts)",xlab="")
 dev.off()
