@@ -1,3 +1,7 @@
+## Instructions
+Make Sure that the data is in the working directory before running any of the scripts
+
+
 ## Introduction
 
 This assignment uses data from
